@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">JAV1001-ScoreKeeper</string>
+    <string name="team_1">Team 1</string>
+    <string name="team1Points">0</string>
+    <string name="team_2">Team 2</string>
+    <string name="team2Points">0</string>
+    <string name="team2attack">ATTACK</string>
+    <string name="team1defense">DEFENSE</string>
+    <string name="team2defense">DEFENSE</string>
+    <string name="team1attack">ATTACK</string>
+    <string name="points">POINTS</string>
+    <string name="gameName">My Funny Game</string>
+
+
+</resources>
