@@ -59,23 +59,24 @@ private Spinner spinnerPoints;
         TextView text1 = findViewById(R.id.team1points);
         String pointsString1 = spinnerPoints.getSelectedItem().toString();
         int points1 = Integer.parseInt(pointsString1);
-        if (goals1 > 1) {
-            goals1 -= points1;
+        goals1 -= points1;
+        if (goals1 > 0) {
             text1.setText("" + goals1);
-        } else{
+        }else{
             text1.setText("0");
             goals1 = 0;
         }
+
         }
     // actions to decrease points to team2
     public void teamTwoDefense(View view){
         TextView text2 = findViewById(R.id.team2points);
         String pointsString2 = spinnerPoints.getSelectedItem().toString();
         int points2 = Integer.parseInt(pointsString2);
-        if (goals2 > 1) {
-            goals2 -= points2;
+        goals2 -= points2;
+        if (goals2 > 0) {
             text2.setText("" + goals2);
-        } else{
+        }else{
             text2.setText("0");
             goals2 = 0;
         }
