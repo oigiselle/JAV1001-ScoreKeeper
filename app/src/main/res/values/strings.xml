@@ -10,6 +10,8 @@
     <string name="team1attack">ATTACK</string>
     <string name="points">POINTS</string>
     <string name="gameName">My Funny Game</string>
+    <string name="attackbtn">ATTACK +</string>
+    <string name="deffensebtn">DEFENSE -</string>
 
 
 </resources>

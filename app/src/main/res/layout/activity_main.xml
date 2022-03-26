@@ -20,7 +20,7 @@
         android:text="@string/gameName"
         android:textAlignment="textStart"
         android:textColor="#673AB7"
-        android:textSize="24sp"
+        android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -32,10 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
-        android:fontFamily="sans-serif-black"
         android:text="@string/team_1"
-
-        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/gameName"
         app:layout_constraintTop_toBottomOf="@+id/gameName" />
 
@@ -45,9 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
-        android:fontFamily="sans-serif-black"
         android:text="@string/team_2"
-        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/gameName"
         app:layout_constraintTop_toBottomOf="@+id/gameName" />
 
@@ -60,7 +55,6 @@
         android:layout_marginEnd="24dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/team1Points"
-        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/team1TextView"
         app:layout_constraintTop_toBottomOf="@+id/team1TextView" />
@@ -74,7 +68,6 @@
         android:layout_marginEnd="24dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/team2Points"
-        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/team2TextView"
         app:layout_constraintTop_toBottomOf="@+id/team2TextView" />
@@ -96,7 +89,8 @@
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="35dp"
         android:onClick="teamTwoAttack"
-        android:text="ATTACK +"
+        android:text="@string/attackbtn"
+        android:textSize="15dp"
         app:layout_constraintBottom_toTopOf="@+id/team2DefenseButton"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="DuplicateSpeakableTextCheck" />
@@ -108,7 +102,8 @@
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="100dp"
         android:onClick="teamTwoDefense"
-        android:text="DEFENSE -"
+        android:text="@string/deffensebtn"
+        android:textSize="14dp"
         app:backgroundTint="#9C27B0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -120,9 +115,11 @@
         android:layout_marginStart="50dp"
         android:layout_marginBottom="35dp"
         android:onClick="teamOneAttack"
-        android:text="ATTACK +"
+        android:text="@string/attackbtn"
+        android:textSize="15dp"
         app:layout_constraintBottom_toTopOf="@+id/team1DefenseButton"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/team1DefenseButton"
@@ -131,8 +128,9 @@
         android:layout_marginStart="50dp"
         android:layout_marginBottom="100dp"
         android:onClick="teamOneDefense"
-        android:text="DEFENSE -"
+        android:text="@string/deffensebtn"
         app:backgroundTint="#9C27B0"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="DuplicateSpeakableTextCheck" />
@@ -157,13 +155,16 @@
     <!--Spinner !-->
     <Spinner
         android:id="@+id/spinnerPoints"
-        android:layout_width="100dp"
-        android:layout_height="33dp"
+        android:layout_width="124dp"
+        android:layout_height="53dp"
         android:layout_marginTop="30dp"
         android:textAlignment="center"
+        android:background="@color/neon_pink"
+        android:popupBackground="@color/midday_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
